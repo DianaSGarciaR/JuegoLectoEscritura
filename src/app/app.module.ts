@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 //Servicio
 
-import { LoadGraphService } from './load-graph.service'
+import { LoadGraphService } from './load-graph.service';
 
 //
 
