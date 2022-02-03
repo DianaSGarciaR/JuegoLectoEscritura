@@ -1,7 +1,27 @@
-<nav class="navbar navbar-light" style="background-color:#ADF3FA;">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#5b62ab;">
+
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <h5> Juego Lecto Escritura</h5>
-        </a>
+
+        <a class="navbar-brand" href="#" [routerLink]="['selec-game']">Juego lectro Escritura</a>
+
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+
+      <span class="navbar-toggler-icon "></span>
+
+    </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+            <div class="navbar-nav mr-auto">
+
+                <a class="nav-link active " aria-current="page" [routerLink]="['operation/selec-operation']">Operacion</a>
+
+                <a class="nav-link active " aria-current="page" [routerLink]="['graphics/selec-graphic']">Grafica</a>
+
+            </div>
+
+        </div>
+
     </div>
+
 </nav>

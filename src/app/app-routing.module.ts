@@ -6,6 +6,8 @@ import { MemoramaGameComponent } from './components/memorama-game/memorama-game.
 import { SelecGameComponent } from './components/selec-game/selec-game.component';
 import { WritingGameComponent } from './components/writing-game/writing-game.component';
 import { GraficaComponent } from './components/grafica/grafica.component';
+import { MemoryN1Component } from './memoryplay/memory-n1/memory-n1.component';
+
 
 
 
@@ -17,8 +19,14 @@ const APP_ROUTES: Routes = [
   { path:'writing-game', component: WritingGameComponent },
   { path:'identify-game', component: IdentifyGameComponent },
   { path:'grafica', component: GraficaComponent },
-  { path: '**' , pathMatch: 'full', redirectTo:'selec-game'}
+  {path:'operation',
+  loadChildren:()=>import('./operation/operation.module').then(m=>m.OperationModule)},
 
+  { path: '**' , pathMatch: 'full', redirectTo:'selec-game'},
+  
+  
+  { path:'memory', component: MemoryN1Component,
+  loadChildren:()=> import('./memoryplay/memoryplay.module').then(m=>m.MemoryplayModule)},
 ];
 
 @NgModule({

@@ -17,9 +17,7 @@ export class MemoramaGameComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
-
 
 export interface MemoramaGameComponent { imageId: string; state: 'default' | 'flipped' | 'matched'; }
 

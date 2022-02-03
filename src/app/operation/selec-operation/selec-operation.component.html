@@ -1,0 +1,15 @@
+<body>
+<h1>Selec operation</h1>
+
+
+    
+<div class="container">
+    <div class="graphic">
+        <ul class="list-group">
+            <button *ngFor="let item of selec" class="list-group-item" [routerLink]="[item.ruta]" routerLinkActive="active">
+                {{item.texto}}
+            </button>
+        </ul>
+    </div>
+</div>
+</body>

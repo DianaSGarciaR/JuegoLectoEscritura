@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { LoadGraphService } from 'src/app/load-graph.service';
 @Component({
   selector: 'app-writing-game',
   templateUrl: './writing-game.component.html',
@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WritingGameComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _loadScript:LoadGraphService) {
+
+    _loadScript.load(["js/date/writing"]);
+
+  }
 
   ngOnInit(): void {
   }

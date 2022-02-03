@@ -5,7 +5,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
  import { LoadGraphService } from './load-graph.service'
 
-//
 
 //import { NgxChartsModule } from '@swimlane/ngx-charts';
 
@@ -19,6 +18,8 @@ import { MemoramaGameComponent } from './components/memorama-game/memorama-game.
 import { LoginComponent } from './components/login/login.component';
 import { GraficaComponent } from './components/grafica/grafica.component';
 import { APP_ROUTING } from './app-routing.module';
+import { SumaComponent } from './components/suma/suma.component';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { APP_ROUTING } from './app-routing.module';
     IdentifyGameComponent,
     MemoramaGameComponent,
     LoginComponent,
-    GraficaComponent
+    GraficaComponent,
+    SumaComponent
   ],
   imports: [
     BrowserModule,
